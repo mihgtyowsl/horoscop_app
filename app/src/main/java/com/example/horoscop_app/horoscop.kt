@@ -44,7 +44,7 @@ class horoscop : AppCompatActivity() {
 
     private fun APIkall(view: TextView) {
         requestQueue = Volley.newRequestQueue(this)
-        val url = "https://aztro.sameerkumar.website/?sign=aries&day=today"
+        val url = intent.getStringExtra("url")
 
         //Lager en request
         val request = StringRequest(
